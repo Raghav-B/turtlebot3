@@ -12,15 +12,19 @@ TrajectoryPlannerROS:
   acc_lim_y: 0.0
   acc_lim_theta: 0.6
 
-# Goal Tolerance Parameters
-  xy_goal_tolerance: 0.10
-  yaw_goal_tolerance: 0.05
-
 # Differential-drive robot configuration
   holonomic_robot: false
+  xy_goal_tolerance: 0.05
+  yaw_goal_tolerance: 0.17
 
 # Forward Simulation Parameters
-  sim_time: 0.8
-  vx_samples: 18
-  vtheta_samples: 20
+  # sim_time: 10.0
+  vx_samples: 20
+  vtheta_samples: 40
   sim_granularity: 0.05
+
+  meter_scoring: true
+
+  dwa: true
+
+  # oscilaltion_reset_dist: 0.01
